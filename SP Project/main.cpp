@@ -2,14 +2,15 @@
 using namespace sf;
 int main()
 {
-    RenderWindow window(VideoMode({800, 600}), "Title");
-    CircleShape circle(50.f);
+    RenderWindow window(VideoMode({1920, 1080}), "Title");
+    CircleShape circle(10.f);
     circle.setFillColor(Color::White);
     circle.setOrigin(Vector2f(50.f, 50.f));
     circle.setPosition(Vector2f(400.f, 300.f));
 
-    float speed = 400.f; // pixels per second
+    float speed = 1000.f; // pixels per second
     Clock clock;
+    // TEST
 
     while (window.isOpen())
     {
